@@ -1,0 +1,36 @@
+{
+    "name": "kentico-cloud/delivery-sdk-php",
+    "type": "library",
+    "license": "MIT",
+    "description": "Kentico Cloud Delivery SDK for PHP",
+    "keywords": [
+        "delivery",
+        "content-delivery",
+        "headless",
+        "cms",
+        "kentico",
+        "kentico-cloud",
+        "headless-cms"
+    ],
+    "homepage": "https://kenticocloud.com/",
+    "authors": [
+        {
+            "name": "Kentico",
+            "email": "developerscommunity@kentico.com"
+        },
+        {
+            "name": "Stephen Rushing",
+            "email": "stephen.rushing@esiteful.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "nategood/httpful": "^0.2.20",
+        "sunra/php-simple-html-dom-parser": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "KenticoCloud\\": "src/KenticoCloud"
+        }
+    }
+}
