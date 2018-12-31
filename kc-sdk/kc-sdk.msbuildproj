@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/0.9.26">
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.28">
   <PropertyGroup>
     <OutputType>library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,9 +10,9 @@
     <None Remove="Example.php" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.26" />
+    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.28" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Peachpie.App" Version="0.9.26" />
+    <PackageReference Update="Peachpie.App" Version="0.9.28" />
   </ItemGroup>
 </Project>
