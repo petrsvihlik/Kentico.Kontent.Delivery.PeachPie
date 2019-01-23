@@ -14,8 +14,6 @@ namespace kc_peachpie_console
             using (var ctx = Context.CreateConsole(string.Empty, args))
             {
                 ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
-                //ctx.Include(null, @"src\KenticoCloud\Delivery\UrlBuilder.php", true, true);
-                //ctx.Include(@"src\KenticoCloud\Delivery\", "UrlBuilder.php", true, true);
                 //TestInterop1(ctx);
                 TestInterop2(ctx);
                 TestInteropUrlBuilder(ctx); // works
