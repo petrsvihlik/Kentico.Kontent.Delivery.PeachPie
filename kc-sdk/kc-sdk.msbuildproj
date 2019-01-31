@@ -1,9 +1,8 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/0.9.28">
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.31">
   <PropertyGroup>
     <OutputType>library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**/*.php" Exclude="**/tests/**;**/test/**" />
@@ -12,9 +11,9 @@
     <None Remove="Example.php" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.28" />
+    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.31" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Peachpie.App" Version="0.9.28" />
+    <PackageReference Update="Peachpie.App" Version="0.9.31" />
   </ItemGroup>
 </Project>
