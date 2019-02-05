@@ -14,9 +14,10 @@ namespace kc_peachpie_console
             using (var ctx = Context.CreateConsole(string.Empty, args))
             {
                 ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
-                //TestInterop1(ctx);
-                TestInterop2(ctx);
-                TestInteropUrlBuilder(ctx); // works
+                //TestInteropPhpClass(ctx);
+                //TestInteropGetType(ctx);
+                //TestInteropUrlBuilder(ctx);
+                TestInteropGetItem(ctx);
             }
             Console.ReadLine();
         }
@@ -28,7 +29,7 @@ namespace kc_peachpie_console
             Console.WriteLine(url);
         }
 
-        public static void TestInterop1(Context ctx)
+        public static void TestInteropPhpClass(Context ctx)
         {
             // Fails with 'Operation is not valid due to the current state of the object.'
             Example x = new Example(ctx);
@@ -36,18 +37,30 @@ namespace kc_peachpie_console
             Console.WriteLine(content.String);
         }
 
-        public static void TestInterop2(Context ctx)
-        {
-            // All arguments provided
-            // Fails with 'Operation is not valid due to the current state of the object.' when creating urlBuilder
+        public static void TestInteropGetType(Context ctx)
+        {                        
             DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
                 PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0));
 
             var result = deliveryClient.getType("article");
-            // PhpValue result = deliveryClient.getItems();
+            
             foreach (var item in result)
             {
                 Console.WriteLine(item.Key.ToString());
+            }
+        }
+
+        public static void TestInteropGetItem(Context ctx)
+        {
+            DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
+                PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0));
+                                    
+            var result = deliveryClient.getItem("about_us");
+            foreach (var item in result)
+            {
+                var classa = item.Value.ToClass();
+                var itemName = item.Value.GetPropertyValue("name").ToString();
+                Console.WriteLine(itemName);
             }
         }
     }
