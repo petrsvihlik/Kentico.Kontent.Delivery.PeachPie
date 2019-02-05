@@ -47,7 +47,7 @@ namespace kc_peachpie_console
             // PhpValue result = deliveryClient.getItems();
             foreach (var item in result)
             {
-                Console.WriteLine(item.Key);
+                Console.WriteLine(item.Key.ToString());
             }
         }
     }
