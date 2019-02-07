@@ -11,6 +11,9 @@
     <None Remove="Example.php" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.34" />
   </ItemGroup>
   <ItemGroup>

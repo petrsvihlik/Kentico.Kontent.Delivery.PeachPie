@@ -1,4 +1,4 @@
-﻿namespace kc_peachpie_console
+﻿namespace kc_peachpie_test
 {
     public static class Extensions
     {
