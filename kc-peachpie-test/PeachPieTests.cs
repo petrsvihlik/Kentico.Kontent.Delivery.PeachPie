@@ -1,22 +1,21 @@
+using KenticoCloud.Delivery;
+using KenticoCloud.Delivery.Models.Types;
+using Models;
+using Pchp.Core;
 using System;
 using Xunit;
-using Pchp.Core;
-using KenticoCloud.Delivery;
-using System.Reflection;
-using Models;
-using KenticoCloud.Delivery.Models.Types;
 
 namespace kc_peachpie_test
 {
     public class PeachPieTests : IDisposable
     {
-        Context ctx;
+        private Context ctx;
         public PeachPieTests()
         {
             Context.AddScriptReference(typeof(UrlBuilder).Assembly);
             ctx = Context.CreateConsole(string.Empty, string.Empty);
             ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
-            
+
         }
 
         public void Dispose()
@@ -38,8 +37,8 @@ namespace kc_peachpie_test
             Example x = new Example(ctx);
             var result = x.TestGetType();
 
-            var ct = result.ToClr(typeof(ContentType)) as ContentType;
-            var system = ct.system.ToClr(typeof(ContentTypeSystem)) as ContentTypeSystem;
+            var ct = (ContentType)result.ToClr();
+            var system = (ContentTypeSystem)ct.system.ToClr();
 
             Assert.Equal("Article", system.name);
         }
@@ -63,8 +62,8 @@ namespace kc_peachpie_test
 
             var result = deliveryClient.getType("article");
 
-            var ct = result.ToClr(typeof(ContentType)) as ContentType;
-            var system = ct.system.ToClr(typeof(ContentTypeSystem)) as ContentTypeSystem;
+            var ct = (ContentType)result.ToClr();
+            var system = (ContentTypeSystem)ct.system.ToClr();
 
             Assert.Equal("Article", system.name);
         }
