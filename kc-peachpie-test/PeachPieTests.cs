@@ -73,9 +73,10 @@ namespace kc_peachpie_test
         public void TestInteropGetItem()
         {
             DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
-                PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0));
-
-            deliveryClient.typeMapper = PhpValue.FromClass(new CustomTypeProvider());
+                PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0))
+            {
+                typeMapper = PhpValue.FromClass(new CustomTypeProvider())
+            };
 
 
             var result = deliveryClient.getItem("coffee_beverages_explained");
