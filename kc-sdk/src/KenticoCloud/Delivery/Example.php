@@ -2,12 +2,13 @@
 
 namespace KenticoCloud\Delivery;
 use KenticoCloud\Delivery\DeliveryClient;
+use Models\Article;
 
 class Example
 {
 	public function TestInstantiation()
 	{	
-		$x = new Models\Article;
+		$x = new \Models\Article;
 		return $x;
 	}	
 

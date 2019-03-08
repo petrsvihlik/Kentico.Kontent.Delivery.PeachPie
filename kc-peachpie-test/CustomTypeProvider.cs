@@ -1,5 +1,5 @@
-using Models;
 using KenticoCloud.Delivery;
+using Models;
 using Pchp.Core;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace kc_peachpie_test
         public PhpValue getTypeClass(PhpValue typeName)
         {
             Type objectType = _codenames.Keys.FirstOrDefault(type => GetCodename(type).Equals(typeName.String));
-            return PhpValue.Create(objectType.FullName.Replace('.', '\\'));
+            return PhpValue.Create("\\" + objectType.FullName.Replace('.', '\\'));
         }
 
         public string GetCodename(Type contentType)
