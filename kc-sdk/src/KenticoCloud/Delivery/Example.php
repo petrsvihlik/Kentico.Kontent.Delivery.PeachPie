@@ -9,6 +9,14 @@ class Example
 	public function TestInstantiation()
 	{	
 		$x = new \Models\Article;
+		$y = get_class($x);
+		$z = $x::class;
+		return $x;
+	}	
+
+	public function TestInstantiationWithString($className)
+	{	
+		$x = new $className;
 		return $x;
 	}	
 
