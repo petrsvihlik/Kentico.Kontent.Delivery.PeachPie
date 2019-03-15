@@ -68,13 +68,13 @@ namespace kc_peachpie_test
         }
 
         [Fact]
-        public void TestInteropInstantiationWithString()
+        public void TestInstantiationWithTypeName()
         {
             // Arrange
-            Example x = new Example(ctx);
+            Example x = new Example(ctx);            
 
             // Act
-            var result = x.TestInstantiationWithString(@"Models.Article");
+            var result = x.TestInstantiationWithTypeName();
 
             // Assert
             Assert.IsType<Article>(result.ToClr());

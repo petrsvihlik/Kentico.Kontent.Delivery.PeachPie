@@ -7,18 +7,15 @@ use Models\Article;
 class Example
 {
 	public function TestInstantiation()
-	{	
-		$x = new \Models\Article;
-		$y = get_class($x);
-		$z = $x::class;
-		return $x;
+	{
+		return new \Models\Article();
 	}	
 
-	public function TestInstantiationWithString($className)
-	{	
-		$x = new $className;
-		return $x;
-	}	
+	public function TestInstantiationWithTypeName()
+	{
+		$type = \Models\Article::class;
+		return new $type();
+	}
 
 	public function TestGetType()
 	{	
