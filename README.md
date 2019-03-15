@@ -1,4 +1,6 @@
-# PeachPieTests
+# Kentico Cloud Delivery SDK for PHP running on .NET via PeachPie
+[![Build status](https://ci.appveyor.com/api/projects/status/l1n1lsb5u8rjbsnc?svg=true)](https://ci.appveyor.com/project/petrsvihlik/peachpietests)
+
 
 
 Use https://ci.appveyor.com/nuget/peachpie for debugging

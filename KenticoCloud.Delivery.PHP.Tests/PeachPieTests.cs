@@ -113,7 +113,7 @@ namespace kc_peachpie_test
             // Act
             var result = deliveryClient.getItem("coffee_beverages_explained");
 
-            //// Assert
+            // Assert
             Assert.IsType<Article>(result.ToClr());
             Assert.Equal("Coffee Beverages Explained", (result.ToClr() as Article).title);
             Assert.StartsWith("Espresso and filtered coffee", (result.ToClr() as Article).summary);
