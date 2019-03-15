@@ -4,7 +4,8 @@
 ![Kentico Cloud Delivery SDK for PHP running on .NET via PeachPie](https://i.imgur.com/DIkxQvd.png)
 
 
-Use https://ci.appveyor.com/nuget/peachpie for debugging
 
 
-https://www.peachpie.io/2019/02/using-c-in-php-and-vice-versa.html
+Read more about C# and PHP interop at https://www.peachpie.io/2019/02/using-c-in-php-and-vice-versa.html
+
+Use https://ci.appveyor.com/nuget/peachpie for debugging.
