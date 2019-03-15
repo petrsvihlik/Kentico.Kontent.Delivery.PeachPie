@@ -2,7 +2,6 @@
 
 namespace KenticoCloud\Delivery;
 use KenticoCloud\Delivery\DeliveryClient;
-use Models\Article;
 
 class Example
 {
@@ -11,17 +10,10 @@ class Example
 		return new \Models\Article();
 	}	
 
-	public function TestInstantiationWithTypeName()
+	public function TestInstantiationWithTypeName($typeName)
 	{
-		$type = \Models\Article::class;
+		$type = $typeName;
 		return new $type();
-	}
-
-	public function TestInstantiationReflectionClass()
-	{
-		$type = \Models\Article::class;
-		$refl = new ReflectionClass(type);
-		return $refl->newInstanceWithoutConstructor();
 	}
 
 	public function TestGetType()

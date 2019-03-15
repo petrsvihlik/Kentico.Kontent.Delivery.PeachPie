@@ -70,11 +70,13 @@ namespace kc_peachpie_test
         [Fact]
         public void TestInstantiationWithTypeName()
         {
+            ctx.DeclareType<Article>();
+
             // Arrange
-            Example x = new Example(ctx);            
+            Example x = new Example(ctx);
 
             // Act
-            var result = x.TestInstantiationWithTypeName();
+            var result = x.TestInstantiationWithTypeName(@"\Models\Article");
 
             // Assert
             Assert.IsType<Article>(result.ToClr());
@@ -110,12 +112,11 @@ namespace kc_peachpie_test
 
             // Act
             var result = deliveryClient.getItem("coffee_beverages_explained");
-            Article a = result.ToClr() as Article;
 
-            // Assert
+            //// Assert
             Assert.IsType<Article>(result.ToClr());
-            Assert.Equal("Coffee Beverages Explained", a.title);
-            //Assert.Equal("Coffee Beverages Explained", a.summary);
+            Assert.Equal("Coffee Beverages Explained", (result.ToClr() as Article).title);
+            Assert.StartsWith("Espresso and filtered coffee", (result.ToClr() as Article).summary);
         }
     }
 }
