@@ -1,11 +1,10 @@
-using KenticoCloud.Delivery;
 using Models;
 using Pchp.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace kc_peachpie_test
+namespace KenticoCloud.Delivery.PHP.Tests
 {
     public class CustomTypeProvider : TypeMapperInterface
     {

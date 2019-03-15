@@ -1,15 +1,15 @@
-using KenticoCloud.Delivery;
 using KenticoCloud.Delivery.Models.Types;
 using Models;
 using Pchp.Core;
 using System;
 using Xunit;
 
-namespace kc_peachpie_test
+namespace KenticoCloud.Delivery.PHP.Tests
 {
     public class PeachPieTests : IDisposable
     {
         private Context ctx;
+
         public PeachPieTests()
         {
             Context.AddScriptReference(typeof(UrlBuilder).Assembly);
@@ -17,7 +17,7 @@ namespace kc_peachpie_test
 
             ctx = Context.CreateConsole(string.Empty, string.Empty);
             ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
-
+            ctx.DeclareType<Article>();
         }
 
         public void Dispose()
@@ -70,8 +70,6 @@ namespace kc_peachpie_test
         [Fact]
         public void TestInstantiationWithTypeName()
         {
-            ctx.DeclareType<Article>();
-
             // Arrange
             Example x = new Example(ctx);
 
@@ -103,7 +101,6 @@ namespace kc_peachpie_test
         public void TestInteropGetItem()
         {
             // Arrange
-            ctx.DeclareType<Article>();
             DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
                 PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0))
             {
