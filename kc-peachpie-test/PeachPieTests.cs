@@ -101,6 +101,7 @@ namespace kc_peachpie_test
         public void TestInteropGetItem()
         {
             // Arrange
+            ctx.DeclareType<Article>();
             DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
                 PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0))
             {
@@ -109,16 +110,12 @@ namespace kc_peachpie_test
 
             // Act
             var result = deliveryClient.getItem("coffee_beverages_explained");
+            Article a = result.ToClr() as Article;
 
             // Assert
-            foreach (var item in result)
-            {
-                var classa = item.Value.ToClass();
-
-                var itemName = item.Value.GetPropertyValue("name").ToString();
-                Console.WriteLine(itemName);
-                Console.WriteLine(classa);
-            }
+            Assert.IsType<Article>(result.ToClr());
+            Assert.Equal("Coffee Beverages Explained", a.title);
+            //Assert.Equal("Coffee Beverages Explained", a.summary);
         }
     }
 }

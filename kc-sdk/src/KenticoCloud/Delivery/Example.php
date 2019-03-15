@@ -17,6 +17,13 @@ class Example
 		return new $type();
 	}
 
+	public function TestInstantiationReflectionClass()
+	{
+		$type = \Models\Article::class;
+		$refl = new ReflectionClass(type);
+		return $refl->newInstanceWithoutConstructor();
+	}
+
 	public function TestGetType()
 	{	
 		$client = new DeliveryClient('975bf280-fd91-488c-994c-2f04416e5ee3');
