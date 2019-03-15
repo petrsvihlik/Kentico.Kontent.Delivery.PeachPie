@@ -84,8 +84,7 @@ namespace KenticoCloud.Delivery.PHP.Tests
         public void TestInteropGetType()
         {
             // Arrange
-            DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
-                PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0));
+            DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3");
 
             // Act
             var result = deliveryClient.getType("article");
@@ -101,8 +100,7 @@ namespace KenticoCloud.Delivery.PHP.Tests
         public void TestInteropGetItem()
         {
             // Arrange
-            DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3",
-                PhpValue.Null, PhpValue.Null, PhpValue.False, PhpValue.False, PhpValue.Create(0))
+            DeliveryClient deliveryClient = new DeliveryClient(ctx, "975bf280-fd91-488c-994c-2f04416e5ee3")
             {
                 typeMapper = PhpValue.FromClass(new CustomTypeProvider())
             };
