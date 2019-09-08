@@ -12,8 +12,7 @@ namespace KenticoCloud.Delivery.PHP.Tests
 
         public PeachPieTests()
         {
-            Context.AddScriptReference(typeof(UrlBuilder).Assembly);
-            Context.AddScriptReference(typeof(Article).Assembly);
+            Context.AddScriptReference(typeof(DeliveryClient).Assembly);
 
             ctx = Context.CreateConsole(string.Empty, string.Empty);
             ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
