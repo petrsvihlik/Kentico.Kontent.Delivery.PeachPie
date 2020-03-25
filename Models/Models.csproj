@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Peachpie.Runtime" Version="0.9.45" />
+    <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
   </ItemGroup>
 
 </Project>
