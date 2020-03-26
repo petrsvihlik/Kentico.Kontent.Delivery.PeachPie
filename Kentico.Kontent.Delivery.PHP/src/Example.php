@@ -1,6 +1,6 @@
 ﻿<?php
 
-namespace Kentico\Kontent\Delivery;
+namespace PHPInterop;
 use Kentico\Kontent\Delivery\DeliveryClient;
 
 class Example

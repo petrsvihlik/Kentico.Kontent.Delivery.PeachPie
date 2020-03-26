@@ -12,10 +12,8 @@ Use https://ci.appveyor.com/nuget/peachpie for debugging.
 
 # Developing
 
-## Updating the Kentico Kontent SDK
-1. Delete the contents of [`/Kentico.Kontent.Delivery.PHP/`](https://github.com/petrsvihlik/Kentico.Kontent.Delivery.PeachPie/tree/master/Kentico.Kontent.Delivery.PHP), keep only the `.msbuildproj` file
-2. Download the SDK at https://github.com/Kentico/kontent-delivery-sdk-php
-3. Copy over the `src` folder and `composer.json` to `/Kentico.Kontent.Delivery.PHP/`
-4. Run `composer install --no-dev`
-5. Persist the [Example.php](https://github.com/petrsvihlik/Kentico.Kontent.Delivery.PeachPie/blob/master/Kentico.Kontent.Delivery.PHP/src/Kentico/Kontent/Delivery/Example.php) file
-6. Done
+## Running the project locally
+0. Go to `Kentico.Kontent.Delivery.PHP/` folder
+1. Run `composer install --no-dev`
+2. Build in Visual Studio 2019
+2. Done

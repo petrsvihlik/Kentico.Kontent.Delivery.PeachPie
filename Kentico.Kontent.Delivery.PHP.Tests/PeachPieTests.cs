@@ -1,7 +1,7 @@
-using Kentico.Kontent.Delivery;
 using Kentico.Kontent.Delivery.Models.Types;
 using Models;
 using Pchp.Core;
+using PHPInterop;
 using System;
 using Xunit;
 

@@ -1,0 +1,41 @@
+{
+    "name": "kentico/kontent-delivery-sdk-php",
+    "type": "library",
+    "license": "MIT",
+    "description": "Kentico Kontent Delivery SDK for PHP",
+    "keywords": [
+        "delivery",
+        "content-delivery",
+        "headless",
+        "cms",
+        "kentico",
+        "kentico-kontent",
+        "headless-cms"
+    ],
+    "homepage": "https://kontent.ai/",
+    "authors": [
+        {
+            "name": "Kentico",
+            "email": "devrel@kentico.com"
+        },
+        {
+            "name": "Stephen Rushing",
+            "email": "stephen.rushing@esiteful.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "nategood/httpful": "^0.2.20",
+        "kub-at/php-simple-html-dom-parser": "^1.9"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*",
+        "codeclimate/php-test-reporter": "dev-master",
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kentico\\Kontent\\": "src/Kentico/Kontent"
+        }
+    }
+}

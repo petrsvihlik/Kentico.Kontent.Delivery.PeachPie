@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Kentico\\Kontent\\' => array($baseDir . '/src/Kentico/Kontent'),
+    'PHPInterop\\' => array($baseDir . '/src'),
+    'Kentico\\Kontent\\' => array($vendorDir . '/kentico/kontent-delivery-sdk-php/src/Kentico/Kontent'),
 );

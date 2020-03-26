@@ -1,5 +1,64 @@
 [
     {
+        "name": "kentico/kontent-delivery-sdk-php",
+        "version": "3.0.1",
+        "version_normalized": "3.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Kentico/kontent-delivery-sdk-php.git",
+            "reference": "93c995018b7eab5c9be64dbf129a11bd196f7433"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Kentico/kontent-delivery-sdk-php/zipball/93c995018b7eab5c9be64dbf129a11bd196f7433",
+            "reference": "93c995018b7eab5c9be64dbf129a11bd196f7433",
+            "shasum": ""
+        },
+        "require": {
+            "kub-at/php-simple-html-dom-parser": "^1.9",
+            "nategood/httpful": "^0.2.20",
+            "php": "^7.0"
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "dev-master",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": "^6.4"
+        },
+        "time": "2020-01-14T15:45:15+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Kentico\\Kontent\\": "src/Kentico/Kontent"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kentico",
+                "email": "devrel@kentico.com"
+            },
+            {
+                "name": "Stephen Rushing",
+                "email": "stephen.rushing@esiteful.com"
+            }
+        ],
+        "description": "Kentico Kontent Delivery SDK for PHP",
+        "homepage": "https://kontent.ai/",
+        "keywords": [
+            "cms",
+            "content-delivery",
+            "delivery",
+            "headless",
+            "headless-cms",
+            "kentico",
+            "kentico-kontent"
+        ]
+    },
+    {
         "name": "kub-at/php-simple-html-dom-parser",
         "version": "1.9.1",
         "version_normalized": "1.9.1.0",
