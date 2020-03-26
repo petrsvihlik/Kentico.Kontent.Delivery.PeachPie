@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'KenticoCloud\\' => array($baseDir . '/src/KenticoCloud'),
+    'Kentico\\Kontent\\' => array($baseDir . '/src/Kentico/Kontent'),
 );

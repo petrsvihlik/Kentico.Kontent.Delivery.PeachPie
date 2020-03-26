@@ -1,5 +1,5 @@
-using KenticoCloud.Delivery;
-using KenticoCloud.Delivery.Models.Types;
+using Kentico.Kontent.Delivery;
+using Kentico.Kontent.Delivery.Models.Types;
 using Models;
 using Pchp.Core;
 using System;
@@ -9,7 +9,7 @@ namespace Kentico.Kontent.Delivery.PHP.Tests
 {
     public class PeachPieTests : IDisposable
     {
-        private Context ctx;
+        private readonly Context ctx;
 
         public PeachPieTests()
         {
@@ -35,7 +35,7 @@ namespace Kentico.Kontent.Delivery.PHP.Tests
             var url = urlBuilder.getItemUrl("home", PhpValue.Null);
 
             // Assert
-            Assert.StartsWith("https://deliver.kenticocloud.com", url.ToString());
+            Assert.StartsWith("https://deliver.kontent.ai", url.ToString());
         }
 
         [Fact]

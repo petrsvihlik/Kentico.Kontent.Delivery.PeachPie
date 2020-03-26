@@ -1,4 +1,4 @@
-using KenticoCloud.Delivery;
+using Kentico.Kontent.Delivery;
 using Models;
 using Pchp.Core;
 using System;

@@ -4,28 +4,28 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbb56daf1b2c177d2a9f7bb95034fa742
+class ComposerStaticInit8727e04499bfd5836a184057101b8866
 {
     public static $prefixLengthsPsr4 = array (
         'K' => 
         array (
-            'KenticoCloud\\' => 13,
+            'Kentico\\Kontent\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'KenticoCloud\\' => 
+        'Kentico\\Kontent\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/KenticoCloud',
+            0 => __DIR__ . '/../..' . '/src/Kentico/Kontent',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'S' => 
+        'K' => 
         array (
-            'Sunra\\PhpSimple\\HtmlDomParser' => 
+            'KubAT\\PhpSimple\\HtmlDomParser' => 
             array (
-                0 => __DIR__ . '/..' . '/sunra/php-simple-html-dom-parser/Src',
+                0 => __DIR__ . '/..' . '/kub-at/php-simple-html-dom-parser/src',
             ),
         ),
         'H' => 
@@ -40,9 +40,9 @@ class ComposerStaticInitbb56daf1b2c177d2a9f7bb95034fa742
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbb56daf1b2c177d2a9f7bb95034fa742::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbb56daf1b2c177d2a9f7bb95034fa742::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitbb56daf1b2c177d2a9f7bb95034fa742::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8727e04499bfd5836a184057101b8866::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8727e04499bfd5836a184057101b8866::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit8727e04499bfd5836a184057101b8866::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
