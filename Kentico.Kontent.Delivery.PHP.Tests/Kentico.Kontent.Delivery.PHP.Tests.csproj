@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KenticoCloud.Delivery.PHP\KenticoCloud.Delivery.PHP.msbuildproj" />
+    <ProjectReference Include="..\Kentico.Kontent.Delivery.PHP\Kentico.Kontent.Delivery.PHP.msbuildproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 </Project>

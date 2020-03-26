@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.98
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "KenticoCloud.Delivery.PHP", "KenticoCloud.Delivery.PHP\KenticoCloud.Delivery.PHP.msbuildproj", "{C6E06BB4-DBBD-4E7C-9AD0-556E2213B4A6}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Kentico.Kontent.Delivery.PHP", "Kentico.Kontent.Delivery.PHP\Kentico.Kontent.Delivery.PHP.msbuildproj", "{C6E06BB4-DBBD-4E7C-9AD0-556E2213B4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{05D821AA-AEB9-4DC8-B2D4-8AA3702244BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{05D821AA-AEB9-4DC8-B2D4-8AA3702244BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KenticoCloud.Delivery.PHP.Tests", "KenticoCloud.Delivery.PHP.Tests\KenticoCloud.Delivery.PHP.Tests.csproj", "{B140B33B-DE82-4375-853A-DC6F658F80A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kentico.Kontent.Delivery.PHP.Tests", "Kentico.Kontent.Delivery.PHP.Tests\Kentico.Kontent.Delivery.PHP.Tests.csproj", "{B140B33B-DE82-4375-853A-DC6F658F80A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

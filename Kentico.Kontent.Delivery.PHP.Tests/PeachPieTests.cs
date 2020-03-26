@@ -1,10 +1,11 @@
+using KenticoCloud.Delivery;
 using KenticoCloud.Delivery.Models.Types;
 using Models;
 using Pchp.Core;
 using System;
 using Xunit;
 
-namespace KenticoCloud.Delivery.PHP.Tests
+namespace Kentico.Kontent.Delivery.PHP.Tests
 {
     public class PeachPieTests : IDisposable
     {
