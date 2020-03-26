@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/0.9.45">
+﻿<Project Sdk="Peachpie.NET.Sdk">
   <PropertyGroup>
     <OutputType>library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,11 +12,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.36" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Peachpie.App" Version="0.9.45" />
   </ItemGroup>
 </Project>
