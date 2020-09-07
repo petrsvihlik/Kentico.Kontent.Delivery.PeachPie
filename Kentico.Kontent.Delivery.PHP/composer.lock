@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a61439fe1f674c6992168c9092ebb5bd",
+    "content-hash": "c32cd75d82d9bef0ed794b5662d571aa",
     "packages": [
         {
             "name": "kentico/kontent-delivery-sdk-php",

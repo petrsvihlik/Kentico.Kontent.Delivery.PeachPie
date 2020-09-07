@@ -1,5 +1,5 @@
 {
-  "name": "kentico/PHPInterop",
+  "name": "kentico/phpinterop",
   "type": "library",
   "license": "MIT",
   "description": "Kentico Kontent Delivery SDK for PHP running on .NET via PeachPie",
@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PHPInterop\\": "src/"
+      "phpinterop\\": "src/"
     }
   }
 }
