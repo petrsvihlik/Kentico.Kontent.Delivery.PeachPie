@@ -3,6 +3,7 @@ using Models;
 using Pchp.Core;
 using PHPInterop;
 using System;
+using System.IO;
 using Xunit;
 
 namespace Kentico.Kontent.Delivery.PHP.Tests
@@ -16,7 +17,7 @@ namespace Kentico.Kontent.Delivery.PHP.Tests
             Context.AddScriptReference(typeof(DeliveryClient).Assembly);
 
             ctx = Context.CreateConsole(string.Empty, string.Empty);
-            ctx.Include(string.Empty, @"vendor\autoload.php", true, true);
+            ctx.Include(string.Empty, $".{Path.DirectorySeparatorChar}vendor{Path.DirectorySeparatorChar}autoload.php", true, true);
             ctx.DeclareType<Article>();
         }
 
