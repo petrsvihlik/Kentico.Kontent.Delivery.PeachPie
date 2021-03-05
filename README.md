@@ -1,5 +1,5 @@
 # Kentico Kontent Delivery SDK for PHP running on .NET via PeachPie
-[![Build status](https://ci.appveyor.com/api/projects/status/ls8auun1jfstx0y1/branch/master?svg=true)](https://ci.appveyor.com/project/petrsvihlik/kentico-kontent-delivery-peachpie/branch/master)
+[![Build & Test](https://github.com/petrsvihlik/Kentico.Kontent.Delivery.PeachPie/actions/workflows/integrate.yml/badge.svg)](https://github.com/petrsvihlik/Kentico.Kontent.Delivery.PeachPie/actions/workflows/integrate.yml)
 
 ![Kentico Cloud Delivery SDK for PHP running on .NET via PeachPie](https://i.imgur.com/DIkxQvd.png)
 
